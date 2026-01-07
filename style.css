@@ -51,18 +51,6 @@ p{
     border-radius: 50px;
 }
 
-.nav-links{
-    display: flex;
-    gap: 40px;
-    list-style-type: none;
-    margin-top: 5%;
-}
-
-.nav-links a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
 
 .nav-links a:hover{
     color:#1387c1;
@@ -86,6 +74,19 @@ p{
 .nav-medias{
     display: flex;
     margin-top: 4%;
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin-top: 5%;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .nav-medias i{
