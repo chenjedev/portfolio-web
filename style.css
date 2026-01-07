@@ -45,15 +45,19 @@ p{
    color: #1387c1;
 }
 
+.logs{
+    text-align: left;
+    margin-left: -180px;
+}
+
+.logs h1 span{
+   color: #1387c1;
+}
+
 .logo img{
     width: 20%;
     height: auto;
     border-radius: 50px;
-}
-
-
-.nav-links a:hover{
-    color:#1387c1;
 }
 
 .nav-hr hr{
@@ -63,12 +67,30 @@ p{
     height: 0.2px;
 }
 
+
+@media(max-width:768px){
+.nav-links li{
+    display: none;
+}
+
+.nav-medias{
+    display: flex;
+    margin-right:50%;
+    margin-top: 12%;
+}
+}
+
 /* PC DISPLAY */
 @media(min-width:768px){   
 .logo img{
     width: 20%;
     height: 70%;
     border-radius: 100%;
+}
+
+
+.nav-links a:hover{
+    color:#1387c1;
 }
 
 .nav-medias{
@@ -285,13 +307,24 @@ h1{
    .serv-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-      gap: 20px;
+    gap: 20px;
 } 
 
   .serv{
     display: grid;
     grid-column: span 2;
     padding: 20px 5px;
+  }
+}
+
+@media(max-width:768px){
+    .serv-container{
+     gap: 40px;
+    }
+
+    .serv{
+    grid-column: span 2;
+    padding: 20px 25px;
   }
 }
 
@@ -380,6 +413,24 @@ h1{
 @media(min-width:768px){
     .projects{
     margin-top: 10%;
+}
+}
+
+@media(max-width:768px){
+    .projects{
+    margin-top: 10%;
+}
+
+.project-container{
+   gap:20px;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+
+.project-demos{
+   padding: 10px 10px;
+   display: grid;
+   grid-column: span 2;
 }
 }
 
@@ -473,53 +524,6 @@ h1{
     background-color: #2980b9;
 }
 
-
-/*=================================  CONTACT US ==========================*/
-.contact-us input , .contact-us select, .contact-us textarea{
-     background-color: #141f26;
-     border: 1px solid  #2980b9;
-     padding: 20px;
-     border-radius: 20px;
-     color:white;
-     width:100%;
-     font-size: 18px;
-}
-
-.contact-us input::placeholder, .contact-us textarea::placeholder{
-    color:white;
-}
-
-.contact-us textarea{
-    max-width: 330px;
-    min-width: 330px;
-    max-height: 100px;
-    min-height:  90px;
-}
-
-.contact-us button{
-    color: white;
-    background-color: #1387c1;
-    border-radius: 20px;
-    padding:20px;
-    width: 100%;
-    font-size: 23px;
-}
-
-@media(min-width:768px){
-    .contact-us textarea{
-    max-width: 1000px;
-    min-width: 1000px;
-    max-height: 100px;
-    min-height: 100px;
-}
-
-   .contact-us button{
-    border: none;
-   }
-}
-
-
-
 /* =========================== FOOTER ========================*/
 .footer{
     margin-top: 5%;
@@ -599,6 +603,34 @@ h1{
 
     .contact-info{
         margin-left: 30%;
+    }
+
+    .contact-info i{
+    margin-top: 4%;
+    }
+}
+
+@media(max-width:768px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .logo{
+        margin-left: -2%;
+    }
+    .footer .logo img{
+        width: 10%;
+        height: 30%;
+    }
+
+    .qicklinks{
+        margin-left: -120%;
+    }
+
+
+    .contact-info{
+        margin-left: -120%;
     }
 
     .contact-info i{
