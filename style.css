@@ -41,7 +41,7 @@ p{
     gap: 10px;
 }
 
-.logo h1 span{
+.logo h1 span, .choice-item span, .copyright span{
    color: #1387c1;
 }
 
@@ -279,7 +279,6 @@ h1{
     padding: 20px;
     border-radius: 20px;
     border:1px solid #141f26;
-    transition: transform 0.3s ease-in-out;
     border:1px solid #1387c1;
 }
 
@@ -287,7 +286,6 @@ h1{
 .serv:active{
     border:1px solid #1387c1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
 }
 
 .serv h2{
@@ -305,14 +303,14 @@ h1{
 
 @media(min-width:768px){
    .serv-container{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
 } 
 
   .serv{
     display: grid;
-    grid-column: span 2;
+    grid-column: span 1;
     padding: 20px 5px;
   }
 }
@@ -332,7 +330,7 @@ h1{
 
 /* ==================== SKILLS ================== */
 .skills{
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .skillscontainer{
@@ -341,7 +339,7 @@ h1{
     flex-wrap: wrap;
      background-color: #141f26;
     border-radius: 20px;
-     border:1px solid #1387c1;
+  
     align-items: center;
     width: 100%;
     gap: 10px;
@@ -387,6 +385,11 @@ h1{
    padding: 10px 10px;
    display: grid;
    grid-column: span 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-demos:hover{
+      transform: scale(1.05);
 }
 .project-demos img{
     border-radius: 20px;
@@ -527,17 +530,44 @@ h1{
 /* =========================== FOOTER ========================*/
 .footer{
     margin-top: 5%;
-    margin-left: 60%;
     text-align: left;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(6,1fr);
     gap: 20px;
 }
 
+.footer .choice-item{
+    background-color: #101A20;
+    box-shadow: none;
+}
+
+.footer .choice-item h1{
+    margin-top: 5%;
+}
+
+.footer .nav-medias{
+    margin-left: 10px;
+}
+
+.footer .choice-item:hover{
+    background-color: none;
+    box-shadow: 0;
+    transform: none; 
+}
+
+.footer .choice-item{
+    background-color: none;
+    padding: 20px 120px;
+}
+
+.gtr{
+    display: flex;
+    gap: 20px;
+}
 
 .footer h1{
     color: white;
-    font-size: 33px;
+    font-size: 43px;
 }
 
 .footer h2{
@@ -570,6 +600,10 @@ h1{
 .contact-info i{
     margin-top: 2%;
     color:#1387c1;
+}
+
+.htr{
+    padding: 10px;
 }
 
 .footer-hr hr{
@@ -617,20 +651,19 @@ h1{
     }
 
     .footer .logo{
-        margin-left: -2%;
+  
     }
     .footer .logo img{
         width: 10%;
         height: 30%;
     }
 
-    .qicklinks{
-        margin-left: -120%;
+  
     }
 
 
     .contact-info{
-        margin-left: -120%;
+     
     }
 
     .contact-info i{
