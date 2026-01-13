@@ -125,10 +125,14 @@ p{
 /*===================== HERO-SECTION =======================*/
 .hero{  
     margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .hero-contents{
     color: white;
+    display: grid;
+    grid-column: span 1;
 }
 
 .hero-contents span, .navbar span{
@@ -151,7 +155,7 @@ p{
     margin-top: 1%;
 }
 
-.hero-contents p{
+.hero-contents p, .skills p{
     font-size: 21px;
     color: #B0BEC5;
 }
@@ -186,10 +190,14 @@ p{
    background-color: transparent;
 }
 
+.hero-image{
+    display: grid;
+    grid-column: span 1;
+}
 
 .hero-image img{
-    width: 30%;
-    border-radius: 30px;
+    width: 80%;
+    border-radius: 30px; 
 }
 
 .hero-medias i{
@@ -217,11 +225,12 @@ p{
 @media(min-width:768px){
     .hero{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(4,1fr);
     }
 
     .hero-contents{
         display: grid;
+        grid-column: span 2;
         text-align: left;
     }
 
@@ -232,6 +241,7 @@ p{
 
     .hero-image{
         display: grid;
+        grid-column: span 2;
     }
 
     .hero-cta{
@@ -587,22 +597,8 @@ h1{
     color:white;
 }
 
-.contact-info span{
-    color:#1387c1;
-    margin-left: 2%;   
-}
 
-.contact-info p , .contact-info i{
- display: flex;
- flex-direction: row;
-}
-
-.contact-info i{
-    margin-top: 2%;
-    color:#1387c1;
-}
-
-.htr{
+.gtr{
     padding: 10px;
 }
 
@@ -616,6 +612,12 @@ h1{
 .copyright{
     text-align:center;
 }
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+}
+
 
 @media(min-width:768px){
     .footer{
@@ -650,23 +652,36 @@ h1{
         flex-direction: column;
     }
 
-    .footer .logo{
-  
-    }
+    .footer .choice-item{
+    background-color: none;
+    padding: 20px 20px;
+}
     .footer .logo img{
         width: 10%;
         height: 30%;
     }
+   
+    .gtr{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  
+    }
 
+    .quick-links{
+        margin-top: -130px;
+    }
+
+    .footer a{
+    color:#B0BEC5;
+    text-decoration: none;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+}
   
-    }
-
-
-    .contact-info{
-     
-    }
+}
+       
 
     .contact-info i{
     margin-top: 4%;
     }
-}
