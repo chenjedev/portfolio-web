@@ -4,33 +4,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My web</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
     <!------------- NAVBAR-SECTION --------------->
     <section class="navbar">
-        <div class="logo">
+        <div class="logo" data-aos="fade-right" data-aos-duration="1000">
             <h1>Dev<span>Chenje</span></h1>
         </div>
 
         <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="mailto:devchenje@outlook.com?subject=Project%20Inquiry&body=Hello%20Chenje,%0A%0AMy%20name%20is%20_____.%0AI%20have%20a%20project%20and%20I%20would%20like%20to%20discuss%20it%20with%20you.%0A%0AProject%20details:%0A-%20Type%20of%20project:%0A-%20Timeline:%0A-%20Budget:%0A%0AThank%20you.">Contacts</a></li>
+            <li><a href="#hero" data-aos="fade-down" data-aos-delay="100">Home</a></li>
+            <li><a href="#skills" data-aos="fade-down" data-aos-delay="200">Skills</a></li>
+            <li><a href="#services" data-aos="fade-down" data-aos-delay="300">Service</a></li>
+            <li><a href="#projects" data-aos="fade-down" data-aos-delay="400">Projects</a></li>
+            <li><a href="mailto:devchenje@outlook.com?subject=Project%20Inquiry&body=Hello%20Chenje,%0A%0AMy%20name%20is%20_____.%0AI%20have%20a%20project%20and%20I%20would%20like%20to%20discuss%20it%20with%20you.%0A%0AProject%20details:%0A-%20Type%20of%20project:%0A-%20Timeline:%0A-%20Budget:%0A%0AThank%20you." data-aos="fade-down" data-aos-delay="500">Contacts</a></li>
         </ul>
 
          <div class="nav-medias">
-        <a href="https://www.tiktok.com/@developer_c_codes?_t=ZM-90uTbYqsLSC&_r=1"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://github.com/chenjedev"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:devchenje@outlook.com?subject=Project%20Inquiry&body=Hello%20Chenje,%0A%0AMy%20name%20is%20_____.%0AI%20have%20a%20project%20and%20I%20would%20like%20to%20discuss%20it%20with%20you.%0A%0AProject%20details:%0A-%20Type%20of%20project:%0A-%20Timeline:%0A-%20Budget:%0A%0AThank%20you."><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.tiktok.com/@developer_c_codes?_t=ZM-90uTbYqsLSC&_r=1"><i class="fa-brands fa-tiktok" data-aos="zoom-in" data-aos-delay="600"></i></a>
+        <a href="https://github.com/chenjedev"><i class="fa-brands fa-github" data-aos="zoom-in" data-aos-delay="700"></i></a>
+        <a href="mailto:devchenje@outlook.com?subject=Project%20Inquiry&body=Hello%20Chenje,%0A%0AMy%20name%20is%20_____.%0AI%20have%20a%20project%20and%20I%20would%20like%20to%20discuss%20it%20with%20you.%0A%0AProject%20details:%0A-%20Type%20of%20project:%0A-%20Timeline:%0A-%20Budget:%0A%0AThank%20you." data-aos="zoom-in" data-aos-delay="800"><i class="fa-solid fa-envelope"></i></a>
        </div>
     </section><div class="nav-hr"></div>
 
    <!------------------ HERO-SECTION --------------------->
-   <section class="hero" id="hero">
+   <section class="hero" id="hero" data-aos="zoom-in-up" data-aos-duration="1500">
        
        <div class="hero-contents">
           <h3>Hi !</h3>
@@ -45,7 +46,7 @@
           </div>
        </div>
 
-       <div class="hero-image">
+       <div class="hero-image" data-aos="flip-right" data-aos-duration="1500">
           <img src="img/person/WhatsApp Image 2026-01-12 at 20.48.35.jpeg">
        </div>
        
@@ -53,7 +54,7 @@
     
    
    <!------------------------ SKILLS ------------------------>
-   <section class="skills" id="skills">
+   <section class="skills" id="skills" data-aos="fade-up" data-aos-duration="1500">
      <h1>My Tech Stack</h1>
      <p>Technologies I use to build modern, responsive web applications.</p>
      <div class="skillscontainer">
@@ -69,29 +70,29 @@
    </section>
 
    <!-------------------- SERVICES ------------------->
-   <section class="services" id="services">
-    <h1>What I Do</h1>
+   <section class="services" id="services" >
+    <h1 data-aos="zoom-in">What I Do</h1>
     <div class="serv-container">
 
-        <div class="serv">
+        <div class="serv" data-aos="fade-up" data-aos-delay="100">
             <a href="#nbhjj"><i class="fa-solid fa-globe"></i></a>
             <h2>Website Development</h2>
             <p>Modern, responsive websites that help individuals, businesses, and schools present their information clearly online.</p>
         </div><br>
 
-       <div class="serv">
+       <div class="serv" data-aos="fade-up" data-aos-delay="300">
             <a href="#nbhjj"><i class="fa-solid fa-laptop-code"></i></a>
             <h2>Web Application Development</h2>
             <p>Custom web applications that allow users to manage data,submit information, and interact with the system securely.</p>
         </div><br>
 
-        <div class="serv">
+        <div class="serv" data-aos="fade-up" data-aos-delay="500">
             <a href="#nbhjj"><i class="fa-solid fa-cogs"></i></a>
             <h2>System Development</h2>
             <p>Complete systems based on real-world workflows, including user roles, automations, and reporting.</p>
         </div><br>
 
-        <div class="serv">
+        <div class="serv" data-aos="fade-up" data-aos-delay="700">
             <a href="#nbhjj"><i class="fa-solid  fa-rocket"></i></a>
             <h2>Website Deployment & Maintenance</h2>
             <p>Peak website performance guaranteed. I handle all security, updates, and optimization, so your digital asset runs smoothly long-term.</p>
@@ -104,18 +105,18 @@
    
    <!------------------------- PROJECTS --------------------->
    <section class="projects" id="projects">
-      <h1>Things I’ve Built</h1>
+      <h1 data-aos="zoom-in">Things I’ve Built</h1>
       <div class="project-container">
            
-           <div class="project-demos">
+           <div class="project-demos" data-aos="zoom-in" data-aos-delay="100">
                <img src="img/projects/Screenshot 2025-10-28 155243.png">
                <a href="https://gweru-fashion.onrender.com">View Live</a>
            </div>
-           <div class="project-demos">
+           <div class="project-demos" data-aos="zoom-in" data-aos-delay="300">
                <img src="img/projects/Screenshot 2025-11-03 010225.png">
                <a href="https://hotel-lgjy.onrender.com">View Live</a>
            </div>
-           <div class="project-demos">
+           <div class="project-demos" data-aos="zoom-in" data-aos-delay="600">
                <img src="img/projects/Screenshot_9-11-2025_141742_.jpeg">
                <a href="https://iconstruction-612b.onrender.com">View Live</a>
            </div>
@@ -130,23 +131,23 @@
    <!----------------------------- WHY CHOOSE US -------------------------->
    <section id="why-choose-me" class="why-choose-me-section">
     <div class="container">
-        <h2 class="section-title">Why Choose me?</h2>
-        <p class="section-subtitle">More than just code, I deliver solutions that drive results.</p>
+        <h2 class="section-title" data-aos="fade-down" data-aos-delay="100">Why Choose me?</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">More than just code, I deliver solutions that drive results.</p>
 
         <div class="choices-grid">
 
-            <div class="choice-item">
+            <div class="choice-item" data-aos="fade-right" data-aos-delay="200">
                 <i class="fas fa-lightbulb choice-icon"></i> <h3 class="choice-title">Innovative & Problem-Solving</h3>
                 <p class="choice-description">I don't just write code; i craft smart, efficient solutions tailored to your unique challenges. My passion lies in turning complex ideas into intuitive web experiences.</p>
             </div>
 
-            <div class="choice-item">
+            <div class="choice-item" data-aos="fade-up" data-aos-delay="400">
                 <i class="fas fa-mobile-alt choice-icon"></i> <h3 class="choice-title">Responsive & User-Centric Design</h3>
                 <p class="choice-description">Every project i build is designed with the end-user in mind, ensuring seamless experiences across all devices and a delightful interaction every time.</p>
             </div>
 
 
-            <div class="choice-item">
+            <div class="choice-item" data-aos="fade-left" data-aos-delay="600">
                 <i class="fas fa-rocket choice-icon"></i> <h3 class="choice-title">Performance & Optimization Focused</h3>
                 <p class="choice-description">Your website won't just look good; it will load fast and perform efficiently, ensuring a better user experience and higher search engine rankings.</p>
             </div>
@@ -154,26 +155,27 @@
       </div> 
     </section>
 
+
     <!-------------------- FOOTER ------------------>
     <section class="footer" id="footer">
     
     <div class="gtr">
-        <div class="choice-item">
+        <div class="choice-item" data-aos="fade-right">
             <h1>Dev<span>Chenje</span></h1>
         </div> 
 
        <br><br>
       
        <div class="choice-item">
-      <div class="nav-medias">
-        <a href="https://www.tiktok.com/@developer_c_codes?_t=ZM-90uTbYqsLSC&_r=1"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://github.com/chenjedev"><i class="fa-brands fa-github"></i></a>
-        <a href="https://devchenje@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+      <div class="nav-medias" data-aos="fade-right">
+        <a href="https://www.tiktok.com/@developer_c_codes?_t=ZM-90uTbYqsLSC&_r=1"><i class="fa-brands fa-tiktok" data-aos="zoom-in" data-aos-delay="200"></i></a>
+        <a href="https://github.com/chenjedev"><i class="fa-brands fa-github" data-aos="zoom-in" data-aos-delay="400"></i></a>
+        <a href="https://devchenje@outlook.com"><i class="fa-solid fa-envelope" data-aos="zoom-in" data-aos-delay="600"></i></a>
        </div>
        </div><br>
 
        <div class="choice-item">
-        <div class="quick-links">
+        <div class="quick-links" data-aos="fade-up">
         <h2>Quick Links</h2>
         <a href="#hero">Home</a>
         <a href="#services">Services</a>
@@ -184,6 +186,19 @@
 
     </section><br> 
     <div class=footer-hr><hr></div>
-    <p class="copyright">© 2026 Dev<span>Chenje</span> . All rights reserved.</p><br>
+    <p class="copyright" data-aos="fade-up" data-aos-duration="500">© 2026 Dev<span>Chenje</span> . All rights reserved.</p><br>
+
+
+
+
+    <script src="aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true      
+  });
+</script>
+
+
 </body>
 </html>
