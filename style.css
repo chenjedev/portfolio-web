@@ -119,6 +119,11 @@ p{
     display: none;
 }
 
+
+.hero-role{
+  color:white;
+}
+
 .nav-medias{
     display: flex;
     margin-right:50%;
