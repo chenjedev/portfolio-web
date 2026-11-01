@@ -1175,3 +1175,78 @@ a:focus-visible { outline: 2px solid #70c9f2; outline-offset: 4px; border-radius
 @media(min-width:901px){
  .hero{grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr)}
 }
+
+
+/* DevChenje identity: a clear, human-centred process section */
+.how-i-work{
+  max-width:1180px;
+  margin:76px auto 0;
+  padding:48px clamp(18px,4vw,48px);
+  background:#141f26;
+  border:1px solid rgba(176,190,197,.14);
+  border-radius:20px;
+  box-sizing:border-box;
+  text-align:left;
+}
+.how-i-work .eyebrow{
+  margin:0 0 10px;
+  color:#58b8e8;
+  font-size:12px;
+  font-weight:750;
+  letter-spacing:.14em;
+}
+.how-i-work h2{
+  margin:0;
+  color:#fff;
+  font-size:clamp(2rem,4vw,2.8rem);
+}
+.how-intro{
+  max-width:720px;
+  margin:14px 0 30px;
+  color:#b0bec5;
+  line-height:1.8;
+}
+.work-steps{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:16px;
+}
+.work-step{
+  min-width:0;
+  padding:22px 18px;
+  background:#101a20;
+  border:1px solid rgba(19,135,193,.35);
+  border-radius:14px;
+}
+.step-number{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  margin-bottom:14px;
+  border-radius:10px;
+  background:rgba(19,135,193,.16);
+  color:#58b8e8;
+  font-weight:800;
+}
+.work-step h3{
+  margin:0 0 10px;
+  color:#fff;
+  font-size:18px;
+  line-height:1.35;
+}
+.work-step p{
+  margin:0;
+  color:#b0bec5;
+  font-size:15px;
+  line-height:1.7;
+}
+@media(max-width:900px){
+  .work-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  .how-i-work{margin-top:52px;padding:30px 18px}
+  .work-steps{grid-template-columns:1fr}
+  .work-step{padding:20px}
+}
