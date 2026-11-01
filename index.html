@@ -24,25 +24,20 @@
 <body>
     
     <!------------- NAVBAR-SECTION --------------->
-    <section class="navbar">
-        <div class="logo" data-aos="fade-right" data-aos-duration="1000">
-            <h1>Dev<span>Chenje</span></h1>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="#hero" data-aos="fade-down" data-aos-delay="100">Home</a></li>
-            <li><a href="#skills" data-aos="fade-down" data-aos-delay="200">Skills</a></li>
-            <li><a href="#services" data-aos="fade-down" data-aos-delay="300">Service</a></li>
-            <li><a href="#projects" data-aos="fade-down" data-aos-delay="400">Projects</a></li>
-                        <li><a href="mailto:developer.c.codes@gmail.com?subject=Project%20Inquiry&body=Hello%20Chenje,%0A%0AMy%20name%20is%20_____.%0AI%20have%20a%20project%20and%20I%20would%20like%20to%20discuss%20it%20with%20you.%0A%0AProject%20details:%0A-%20Type%20of%20project:%0A-%20Timeline:%0A-%20Budget:%0A%0AThank%20you." data-aos="fade-down" data-aos-delay="500">Contacts</a></li>
-        </ul>
-
-         
-            <div class="hero-cta">
-               <p class="hero-cta-p"><a href="mailto:developer.c.codes@gmail.com?subject=Project%20Inquiry&body=Hello%20Chenje,%0A%0AMy%20name%20is%20_____.%0AI%20have%20a%20project%20and%20I%20would%20like%20to%20discuss%20it%20with%20you.%0A%0AProject%20details:%0A-%20Type%20of%20project:%0A-%20Timeline:%0A-%20Budget:%0A%0AThank%20you." data-aos="zoom-in" data-aos-delay="600">Get Started</a></p>
-            </div>
-       
-    </section><div class="nav-hr"></div>
+    <header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="logo" href="#hero" aria-label="DevChenje home">Dev<span>Chenje</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primary-navigation">
+      <li><a href="#hero">Home</a></li><li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li><li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li><li><a href="#footer">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="mailto:developer.c.codes@gmail.com?subject=Project%20Inquiry">Let's talk</a>
+  </nav>
+</header>
 
    <!------------------ HERO-SECTION --------------------->
    <section class="hero" id="hero" data-aos="zoom-in-up" data-aos-duration="1500">
@@ -139,35 +134,34 @@
    
    <!------------------------- PROJECTS --------------------->
    <section class="projects" id="projects">
-      <h1 data-aos="zoom-in">Selected Projects</h1>
-      <p class="projects-intro">A selection of live demos and practice builds. Some projects are concepts created to demonstrate ideas and skills.</p>
-      <div class="project-container">
-
-            <div class="project-demos" data-aos="zoom-in" data-aos-delay="600">
-               <img src="img/projects/Screenshot 2026-02-06 183150.png" alt="iConstruct website preview" loading="lazy">
-               <p class="project-label">Live demo</p>
-               <a href="https://iconstruct.onrender.com" target="_blank" rel="noopener noreferrer">View Demo</a>
-           </div>
-
-           <div class="project-demos" data-aos="zoom-in" data-aos-delay="100">
-               <img src="img/projects/Screenshot 2026-02-20 161816.png" alt="Gweru Fashion website preview" loading="lazy">
-               <p class="project-label">Live demo</p>
-               <a href="https://gweru-fashion.onrender.com" target="_blank" rel="noopener noreferrer">View Demo</a>
-           </div>
-          
-           <div class="project-demos" data-aos="zoom-in" data-aos-delay="300">
-               <img src="img/projects/Screenshot 2026-02-19 170138.png" alt="Hotel website preview" loading="lazy">
-               <p class="project-label">Live demo</p>
-               <a href="https://hotel-lgjy.onrender.com" target="_blank" rel="noopener noreferrer">View Demo</a>
-           </div>
-           
-      </div>
-
-      <div class="call-to-action">
-            <p>LET'S GET STARTED ON YOUR PROJECT</p>
-            <a href="mailto:developer.c.codes@gmail.com?subject=Project%20Inquiry&body=Hello%20Chenje,%0A%0AMy%20name%20is%20_____.%0AI%20have%20a%20project and%20I%20would%20like%20to%20discuss%20it%20with%20you." class="btn btn-primary">Get Started</a>
-        </div>
-   </section>
+  <p class="eyebrow">WHAT I'VE BEEN BUILDING</p>
+  <h1 data-aos="zoom-in">Selected Projects</h1>
+  <p class="projects-intro">A few website concepts and practice builds where I explore layout, responsive design and useful web interactions. These are demonstrations, not claims of client results.</p>
+  <div class="project-container">
+    <article class="project-demos" data-aos="fade-up">
+      <img src="img/projects/Screenshot 2026-02-06 183150.png" alt="iConstruct construction website preview" loading="lazy">
+      <div class="project-content"><span class="project-label">Construction website concept</span><h2>iConstruct</h2>
+      <p>A multi-page construction company website concept. It includes sections for company information, services, project showcases and team profiles, with a video-led hero section.</p>
+      <ul class="project-tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a href="https://iconstruct.onrender.com" target="_blank" rel="noopener noreferrer">Explore live demo <span aria-hidden="true">↗</span></a></div>
+    </article>
+    <article class="project-demos" data-aos="fade-up" data-aos-delay="100">
+      <img src="img/projects/Screenshot 2026-02-20 161816.png" alt="Gweru Fashion online store preview" loading="lazy">
+      <div class="project-content"><span class="project-label">Fashion e-commerce concept</span><h2>Gweru Fashion</h2>
+      <p>An online fashion-store concept built around browsing clothing categories and product collections. The design explores a shopping layout, product discovery and a mobile-friendly storefront.</p>
+      <ul class="project-tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a href="https://gweru-fashion.onrender.com" target="_blank" rel="noopener noreferrer">Explore live demo <span aria-hidden="true">↗</span></a></div>
+    </article>
+    <article class="project-demos" data-aos="fade-up" data-aos-delay="200">
+      <img src="img/projects/Screenshot 2026-02-19 170138.png" alt="Hotel booking website concept preview" loading="lazy">
+      <div class="project-content"><span class="project-label">Hospitality website concept</span><h2>Hotel Website</h2>
+      <p>A hotel website concept showcasing room listings, event information, image galleries and booking enquiry links. It focuses on presenting accommodation information in a clear visual layout.</p>
+      <ul class="project-tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a href="https://hotel-lgjy.onrender.com" target="_blank" rel="noopener noreferrer">Explore live demo <span aria-hidden="true">↗</span></a></div>
+    </article>
+  </div>
+  <div class="call-to-action"><p>HAVE AN IDEA YOU'D LIKE TO BUILD?</p><a href="mailto:developer.c.codes@gmail.com?subject=Project%20Inquiry" class="btn btn-primary">Let's discuss it</a></div>
+</section>
 
    <!----------------------------- WHY CHOOSE ME -------------------------->
    <section id="why-choose-me" class="why-choose-me-section">
@@ -235,42 +229,30 @@
 
     <script src="aos.js"></script>
 <script>
-  AOS.init({
-    duration: 1000,
-    once: true      
-  });
-
-  const testimonialCards = Array.from(document.querySelectorAll(".testimonial-card"));
-  let testimonialIndex = 0;
-
-  function renderTestimonials() {
-    const total = testimonialCards.length;
-    if (!total) return;
-
-    const prevIndex = (testimonialIndex - 1 + total) % total;
-    const nextIndex = (testimonialIndex + 1) % total;
-
-    testimonialCards.forEach((card, index) => {
-      card.classList.remove("is-prev", "is-active", "is-next", "is-hidden");
-
-      if (index === testimonialIndex) {
-        card.classList.add("is-active");
-      } else if (index === prevIndex) {
-        card.classList.add("is-prev");
-      } else if (index === nextIndex) {
-        card.classList.add("is-next");
-      } else {
-        card.classList.add("is-hidden");
+  if (window.AOS) AOS.init({ duration: 800, once: true });
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('#primary-navigation');
+  if (menuToggle && navigation) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+      navigation.classList.toggle('is-open', !isOpen);
+      document.body.classList.toggle('menu-open', !isOpen);
+    });
+    navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation menu');
+      navigation.classList.remove('is-open');
+      document.body.classList.remove('menu-open');
+    }));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navigation.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
       }
     });
-  }
-
-  if (testimonialCards.length > 0) {
-    renderTestimonials();
-    setInterval(() => {
-      testimonialIndex = (testimonialIndex + 1) % testimonialCards.length;
-      renderTestimonials();
-    }, 3500);
   }
 </script>
 
